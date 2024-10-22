@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida de vó</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+<body>
+
+<!---Começo da navbar-->
+    <header class="navbar">
+    <div class="reservas">
+        <button class="doisbotões"> 
+            <i class="fa-regular fa-user"></i><a href="login.html"> Faça login</a>
+        </button>
+        <button class="doisbotões">
+            <i class="fa-regular fa-user"></i><a href="cadastro.html"> Faça seu cadastro</a>
+        </button>
+        <button class="doisbotões">
+            Agende sua reserva
+        </button>
+    </div>
+        <div class="info">
+            <img id="logo" src="assets/logo.png" alt="Logo do restaurante">
+            <h1>Comida de vó</h1>
+            <p id="local"><i class="fa-solid fa-location-dot"></i> Rua Diogenes 184, Campo Mourão - PR</p>
+            <span id="horario">Segunda á Domingo - 09:00 as 18:00</span>
+        </div>
+    </header>
+<!--Fim da navbar-->
+
+<h2>MENU</h2>
+
+<!--Inicio do menu-->
+<div id="menu">
+
+    <main class="main">
+
+        <!--Primeiro produto-->
+        <div style="display: flex; gap: 15px;">
+            <img class="ImagemComida" src="assets/Feijoada.jpg" alt="Feijoada">
+
+            <div>
+                <p class="NomeProduto"><b>Feijoada</b></p>
+                <p class="Descrição">Feijoada grande, arroz, farofa, torresmo e vinagrete.</p>
+
+                <div class="Div3">
+                    <p class="Preço"><b>R$ 20.99</b></p>
+                    <button 
+                        class="Botão"
+                        data-nome="Feijoada"
+                        data-preço="20.99"
+                    >
+                        <i class="fa fa-cart-plus"></i>
+                    </button>
+                </div>
+                
+            </div>
+
+        </div>
+        <!--Fim do primeiro produto-->
+
+        <!--Segundo produto-->
+        <div style="display: flex; gap: 15px; ;">
+            <img class="ImagemComida" src="assets/Barreado.png" alt="Barreado">
+
+            <div>
+                <p class="NomeProduto"><b>Barreado</b></p>
+                <p class="Descrição">Barreado, arroz e banana.</p>
+
+                <div class="Div3">
+                    <p class="Preço"><b>R$ 24.99</b></p>
+                    <button 
+                        class="Botão"
+                        data-nome="Barreado"
+                        data-preço="24.99"
+                    >
+                        <i class="fa fa-cart-plus"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+        <!--Fim do segundo produto-->
+
+        <!--Terceiro produto-->
+        <div style="display: flex; gap: 15px;">
+            <img class="ImagemComida" src="assets/Strogonoff de frango.jpg" alt="Barreado">
+
+            <div>
+                <p class="NomeProduto"><b>Strogonoff de frango</b></p>
+                <p class="Descrição">Strogonoff de frango, arroz e batata palha.</p>
+
+                <div class="Div3">
+                    <p class="Preço"><b>R$ 19.99</b></p>
+                    <button 
+                        class="Botão"
+                        data-nome="Strogonoff de frango"
+                        data-preço="19.99"
+                    >
+                        <i class="fa fa-cart-plus"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+        <!--Fim do terceiro produto-->
+
+        <!--Quarto produto-->
+        <div style="display: flex; gap: 15px;">
+            <img class="ImagemComida" src="assets/Tropeiro.jpg" alt="Tropeiro">
+
+            <div>
+                <p class="NomeProduto"><b>Tropeiro</b></p>
+                <p class="Descrição">Tropeiro, vinagrete, arroz.</p>
+
+                <div class="Div3">
+                    <p class="Preço"><b>R$ 25.50</b></p>
+                    <button 
+                        class="Botão"
+                        data-nome="Tropeiro"
+                        data-preço="25.50"
+                    >
+                        <i class="fa fa-cart-plus"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+        <!--Fim do quarto produto-->
+
+        <!--Quinto produto-->
+        <div style="display: flex; gap: 15px;">
+            <img class="ImagemComida" src="assets/strogonoff-de-carne.jpg" alt="Barreado">
+
+            <div>
+                <p class="NomeProduto"><b>Strogonoff de carne</b></p>
+                <p class="Descrição">Strogonoff de carne, arroz e batata palha.</p>
+
+                <div class="Div3">
+                    <p class="Preço"><b>R$ 19.99</b></p>
+                    <button 
+                        class="Botão"
+                        data-nome="Strogonoff de carne"
+                        data-preço="19.99"
+                    >
+                        <i class="fa fa-cart-plus"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+        <!--Fim do quinto produto-->
+
+         <!--Sexto produto-->
+         <div style="display: flex; gap: 15px;">
+            <img class="ImagemComida" src="assets/arroz carreteiro.jpg" alt="Barreado">
+
+            <div>
+                <p class="NomeProduto"><b>Arroz Carreteiro</b></p>
+                <p class="Descrição">Arroz Carreteiro.</p>
+
+                <div class="Div3">
+                    <p class="Preço"><b>R$ 15.99</b></p>
+                    <button 
+                        class="Botão"
+                        data-nome="Arroz Carreteiro"
+                        data-preço="15.99"
+                    >
+                        <i class="fa fa-cart-plus"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+        <!--Fim do sexto produto-->
+
+
+    </main>
+
+</div>
+
+<!--Fim do menu-->
+
+<!--Pedido-->
+<div class="Fundo" id="tela-pedido">
+    <div class="Pedido">
+        <h2 style="margin-bottom: 8px;">Meu carrinho</h2>
+        <div id="itens-carrinho"></div>
+            <p class="total">Total: <span id="valor-total">0.00</span></p>
+            <p class="pagamento">Forma de pagamento</p>
+           
+            <button class="botaopagamento">Pix</button>
+            <button class="botaopagamento">Débito</button>
+            <button class="botaopagamento">Crédito</button>
+            <button class="botaopagamento">Dinheiro</button>
+            
+            <div class="div-endereço">
+            <p>Endereço:</p>
+            <input class="input-endereço" type="text" placeholder="Digite seu endereço">
+            </div>
+
+            <div class="fechar-finalizar">
+                <button id="fechar-pedido">Fechar</button>
+                <button id="finalizar-pedido">Finalizar pedido</button>
+            </div>
+    </div>
+</div>
+<!--Fim Pedido-->
+
+<!--Tela de login-->
+
+
+
+
+<!--Fim tela de login-->
+
+
+
+
+
+
+<!--Footer carrinho-->
+<footer>
+    <button class="botaofooter" id="footer-botao">
+        (<span id="contador" style="font-size: 15px;">0</span>)
+        Meu carrinho
+        <i class="fa fa-cart-plus" style="font-size: 20px;"></i>
+    </button>
+</footer>
+
+<!--Fim footer-->
+
+<script src="script.js"></script>
+
+</body>
+</html>
